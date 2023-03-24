@@ -69,7 +69,7 @@
         };
 
         # Configurations for my (only) macOS machine (using nix-darwin)
-        darwinConfigurations = {
+        darwinConfigurations.eudaimonia = {
           appreciate = self.nixos-flake.lib.mkARMMacosSystem {
             imports = [
               self.darwinModules.default # Defined in nix-darwin/default.nix
